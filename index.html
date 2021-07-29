@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <div id="display" class="display" >
+            
+            <div class="card__face display--front">
+            <div class="displayEle">
+                <p> CreditCard Number : </p>
+                <p id="number">1234 5678 9123 1234</p>
+            </div>
+            <div class="displayEle">
+                <p> Card HolderName : </p>
+                <p id="name">John Paul</p>
+            </div>
+
+            <div class="displayEle">
+                <p> Expiry Date : </p>
+                <p id="date">11/22</p>
+            </div>
+            </div>
+        
+            <div class="card__face display--back">
+
+
+            <div class="displayEle">
+                <p> CVV : </p>
+                <p id="cvv">123</p>
+            </div>
+
+            </div>
+
+        </div>
+
+        <div id="inputEle" class="inputEle" >
+            <input class="input" type="text" inputmode="numeric" pattern="[0-9]*" id="cardnumber-input"
+                placeholder="1234 5678 0123 1234" />
+            <input type="text" class="input" pattern="[a-z][A-Z]*" id="cardname-input" placeholder="Keerthana John" />
+            <div class="inputContainer">
+                <input type="text" class="input" inputmode="numeric" pattern="[0-9]*" id="edate-input"
+                    placeholder="11/22" />
+                <input type="text" class="input" inputmode="numeric" pattern="[0-9]*" id="cvv-input"
+                    placeholder="123" />
+            </div>
+        </div>
+
+
+    </div>
+    <script src="script.js"> </script>
+</body>
+
+</html>

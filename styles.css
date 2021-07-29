@@ -1,0 +1,65 @@
+.main {
+
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.inputEle {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    padding: 10px;
+    margin: 10px;
+}
+
+.inputContainer {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.card__face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+  }
+
+.displayEle {
+    display: flex;
+}
+
+
+.display--front {
+    display: flex;
+    background: red;
+  }
+  
+  .display--back {
+    display: flex;
+    background: blue;
+    transform: rotateY( 180deg );
+  }
+
+  .display.is-flipped {
+    transform: rotateY(180deg);
+  }
+
+  .scene {
+    width: 200px;
+    height: 260px;
+    perspective: 600px;
+  }
